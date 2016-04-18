@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+  	<h3><%= @article.title %></h3>
+  </div>
+
+  <div class="panel-body">
+  	<p><%= @article.summary %></p>
+  </div>
+  <% if @article.author %>
+	<div class="panel-footer">By <%= @article.author %></div>
+  <% end %>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <% unless @article.author.nil? %>
+    <p><b>Author: </b><%= @article.author %></p>
+    <% end %>
+    <% unless @article.image.nil? %>
+    <p><b>Image: </b><img src = <%= @article.image %> ></p>
+    <% end %>
+    <% unless @article.source.nil? %>
+    <p><b>Source: </b><%= @article.source %></p>
+    <% end %>
+    <% unless @article.date.nil? %>
+    <p><b>Date: </b><%= @article.date %></p>
+    <% end %>
+    <% unless @article.link.nil? %>
+    <p><b>Link: </b><a href=<%= @article.link %> target="_blank"><%= @article.link %></a></p>
+    <% end %>
+  </div>
+   <ul class="list-group">
+    
+   
+  </ul>
+
+</div>
+
+<div class="btn-group pull-right" role="group">
+    <%= link_to 'Back', articles_path ,class: "btn btn-default" %>
+</div>
+
+

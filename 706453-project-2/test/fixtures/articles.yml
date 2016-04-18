@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source: MyString
+  title: MyString
+  date: MyString
+  summary: MyText
+  author: MyString
+  image: MyText
+  link: MyText
+
+two:
+  source: MyString
+  title: MyString
+  date: MyString
+  summary: MyText
+  author: MyString
+  image: MyText
+  link: MyText
